@@ -19,7 +19,6 @@ if (isset($_POST['InputFirstname']) AND isset($_POST['InputLastname']) AND isset
       lastname = '" . $_POST['InputLastname'] . "',
       email = '" . $_POST['InputEmail'] . "',
       phone = '" . $_POST['InputPhone'] . "' where contact_id = " . $_POST['contact_id'] . "";
-      echo $sql;
       if (mysqli_query($conn, $sql)) {
         echo "<div class='p-3 mb-2 bg-success text-white'>SUCCESS</div>";
       }else {
@@ -46,7 +45,6 @@ if (isset($_POST['InputFirstname']) AND isset($_POST['InputLastname']) AND isset
       '" . $_POST['InputEmail'] . "',
       '" . $_POST['InputPhone'] . "',
       '" . $_POST['InputAddressID'] . "')";
-      echo $sql;
       if (mysqli_query($conn, $sql)) {
         echo "<div class='p-3 mb-2 bg-success text-white'>SUCCESS</div>";
       }else {
